@@ -9,6 +9,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
+    console.log("Request received");
     res.send('Response from GKE node server container');
 });
 app.listen(port, () => {
