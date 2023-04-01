@@ -9,7 +9,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
-    res.send('Response from GKE nodee server container');
+    res.send('Response from GKE node server container');
 });
 app.listen(port, () => {
     console.log(`⚡⚡⚡️️️️️️️️️ Server is running at http://localhost:${port}`);
