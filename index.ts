@@ -7,7 +7,7 @@ const app: Express = express()
 const port = process.env.PORT || 3000
 
 app.get('/', (req: Request, res: Response) => {
-	res.send('Response from GKE nodee server container')
+	res.send('Response from GKE node server container')
 })
 
 app.listen(port, () => {
