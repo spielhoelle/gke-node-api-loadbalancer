@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-api-k8
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-api
+  template:
+    metadata:
+      labels:
+        app: node-api
+    spec:
+      containers:
+      - name: node-api-container
+        image: spielhoelle/node-api
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
