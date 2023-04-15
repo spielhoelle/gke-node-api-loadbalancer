@@ -38,3 +38,6 @@ Response from GKE node server container
 `minikube service node-api-svc`
 or
 `kubectl port-forward svc/node-api-svc 3000:3000`
+
+## Live version
+[http://34.28.24.159/](http://34.28.24.159/)
